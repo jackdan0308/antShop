@@ -1,0 +1,568 @@
+@import 'fonts'
+@import 'libs'
+@import 'vars'
+
+html, body
+	font-size: 1em
+	line-height: 1.75
+	font-family: $default-font
+	min-width: 320px
+	max-width: 1280px
+	margin: auto
+	position: relative
+	overflow-x: hidden
+	opacity: 1
+	background-color: #f5f5f5
+	
+.h1, .h2, .h3
+	margin: 0
+	font-weight: 300
+	padding: 10px 0
+.h2
+	font-size: 1.8em
+.h3
+	font-size: 1.6em
+	padding-top: 30px
+p, td, th
+	font-size: 1.1em
+	font-weight: 300
+	margin: 0
+	letter-spacing: 1.5px
+	font-family: $default-font
+	
+.header-block
+	background-size: cover
+	background-position: center
+	height: 550px
+	position: relative
+	&::before
+	 content: ""
+	 position: absolute
+	 width: 100%
+	 right: 0
+	 top: 0
+	 height: 100%
+	 background-color: rgba(#000, .7)
+
+.header-block-h1
+ position: relative
+	width: 60%
+	margin: auto
+	text-align: center
+	padding-top: 7%
+	.h1
+		color: #fff
+		font-size: 2.2em
+	p
+		color: #fff
+		font-size: 1.2em
+		letter-spacing: 0
+	
+.top-line
+	display: flex
+	justify-content: space-between
+	align-items: center
+	text-transform: uppercase
+	padding-top: 10px
+	.logo
+		font-size: 1.6em
+		padding: 10px
+		line-height: 1
+		a
+			text-decoration: none
+			color: #000
+	 .umi
+		 color: #185ea4
+		.slogan
+			font-size: 0.6em
+			text-transform: none
+	.address
+		font-size: 1.5em
+		padding: 0
+		word-spacing: 3em
+		a
+			text-decoration: none
+			color: #000
+			display: inline-block
+			padding: 10px
+			transition: background-color, .4s ease
+			&:hover, &:focus, &:active
+			 background-color: #000
+			 color: #fff
+			
+	.phone
+		font-size: 1.5em
+		padding: 10px
+		padding-right: 30px
+		a
+			text-decoration: none 
+			color: #000
+			transition: color, .9s ease
+			&:hover, &:focus, &:active
+			 color: #c82516
+		
+.nav-line
+	background: linear-gradient(to right, #213970, #080C20)
+	height: 45px
+	padding: 0
+	margin: 0
+	display: flex
+	ul
+		list-style-type: none
+		text-align: left
+		font-size: 1.2em
+		margin: 0
+		padding: 0
+		padding-left: 10px
+		li
+			display: inline-block
+			color: #fff
+			padding: 0 10px
+			position: relative
+   ul
+				position: absolute
+			 top: 45px
+				left: 10px
+				font-size: 1em
+				z-index: 1
+				background-color: #131313
+				padding: 0
+				text-align: left
+				padding: 0
+				margin: 0
+				width: 100%
+				li
+					display: block
+					padding: 0
+					margin: 0
+					a
+					 padding: 0 10px
+					 margin: 0
+						&:hover, &:focus
+						 background-color: #2c363e
+				.nav-menu-subdrop
+					ul
+						position: absolute
+						left: 120px
+						top: 0
+						padding: 0
+						margin: 0
+						text-align: center
+						z-index: 3
+						display: inline-block
+						a
+							display: block
+       background-color: #131313
+							padding: 0
+							margin: 0
+							min-width: 180px
+							&:hover, &:focus
+						  background-color: #2c363e
+			a
+				display: block
+				text-decoration: none
+				line-height: 45px
+				color: #fff
+				padding: 0 10px
+				transition: background-color .9s ease
+				&:hover, &focus
+					background-color: #131313
+		&:nth-child(2)
+			right: 10px
+			position: absolute
+			
+	.hamburger
+		padding-top: 0
+		padding-bottom: 0
+		vertical-align: middle
+		margin-top: 10px
+		outline: none
+		&-inner, &-inner::before, &-inner::after
+			background-color: #fff
+			height: 2px
+
+.mm-divider
+	font-size: 1.4em !important
+	padding: 7px 0 !important
+#my-menu
+	ul
+		li:not(.mm-divider)
+			 font-size: 1.25em !important
+
+			
+.header-block-buttons
+	display: flex
+	position: relative
+	justify-content: center
+	padding: 20px 0
+	align-items: center
+.callback-input
+	font-family: $default-font
+	background-color: transparent
+	border: 1px solid #213970
+	color: #fff
+	font-size: 1.4em
+	font-weight: 300
+	height: 40px
+	width: 50%
+	padding: 3px 10px
+	&::placeholder
+	 color: #fff
+		font-size: 1em
+	 font-weight: 300
+.black-color
+	color: #000
+
+.callback-button
+	font-family: $default-font
+	height: 45px
+	margin-left: 20px
+	background-color: #213970
+	border: none
+	font-size: 1.2em
+	font-weight: 300
+	color: #fff
+	transition: background-color .9s ease
+	&:hover, &:focus
+	 background-color: #185ea4
+	
+.main
+	.breadcrumbs
+		ol
+			list-style-type: none
+			font-size: 0.9em
+			li
+				display: inline-block
+				&:last-child
+				 font-weight: 400
+				 font-size: 1.1em
+				 a
+					 color: #213970
+					 text-decoration: underline 
+				a
+					text-decoration: none
+					color: #000
+	
+	.choose-model-bg
+		background-color: #fff
+		width: 100%
+		.container
+			margin: auto
+			padding: 0
+			.row
+				margin: 0
+				padding: 0
+				.col-xs-3
+					display: block
+					padding: 10px
+					margin: auto
+					a
+						text-decoration: underline
+						color: #000
+					img
+						display: block
+						margin: auto
+						padding: 10px 0
+
+	.choose-model
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-wrap: wrap
+		width: 80%
+		margin: auto
+		padding: 30px 0
+		p
+			display: block
+			width: 100%
+			margin-bottom: 10px
+		&-item
+			margin: 10px 10px
+			text-align: center
+			a
+				text-decoration: none
+				color: inherit
+				display: flex
+				flex-direction: column
+				border: 1px solid #185ea4
+		 	border-radius: 5px
+				padding: 10px 40px
+				transition: border-color, .5s ease
+				width: 160px
+				&:hover, &:focus, &:active
+				 border-color: #ff9900
+			img
+				object-fit: contain
+	
+	.block-address
+		height: 650px
+		display: flex
+		justify-content: space-around
+		padding-top: 50px
+		&-tc, &-rai
+			padding: 0
+			&-photo
+				display: flex
+				
+			&-photo-sub
+				background-color: #fff
+				padding: 15px
+				font-family: $default-font
+				p
+					padding: 5px 0
+				span
+					font-size: 1.5em
+				&-button
+						background-color: #213970
+						a
+							color: #fff
+							text-decoration: none
+							display: block
+							text-align: center
+							height: 40px
+							line-height: 40px
+		.fotorama
+			display: block
+			&__img
+			 margin: 0 !important
+			 padding: 0 !important
+		.fotorama-contacts
+		 width: 50%
+		.yandexMap
+			width: 50%
+		
+ 
+ .contacts
+		height: 100%
+		display: flex
+		justify-content: initial
+		flex-direction: column
+		padding-top: 20px
+		.block-address-tc
+			width: 100%
+		.h2
+			padding: 25px
+			text-align: center
+			background-color: #fff
+		p
+			font-size: 1.2em
+			span
+				font-size: 1.2em
+		
+	.service-words, .uslugi, .main-text
+		display: flex
+		background-color: #fff
+		flex-direction: column
+		padding: 40px 50px
+		padding-top: 20px
+		&-block
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+		 &-item
+		  strong
+		  	padding-top: 15px
+					padding-left: 10px
+					padding-bottom: 5px
+		 		display: block
+		 		font-size: 1.1em
+		
+	.pop-uslugi
+		background-color: inherit
+		&-block
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			&-column
+				ul
+					list-style-type: circle
+				 a
+						margin: 0
+				 	color: inherit
+						padding: 2px 0
+						display: block
+		
+ .consultation
+		display: flex
+		flex-direction: column
+		text-align: center
+		&-words
+			h3+p
+				font-size: 2em
+				padding-bottom: 10px
+				a
+					text-decoration: none
+					color: #000
+					transition: all .4s ease
+					&:hover, &:focus
+					 color: #c82516
+			p
+				font-size: 1.6em
+	 &-form
+			padding-top: 20px
+			padding-bottom: 40px
+			.callback-input
+				width: 30%
+			 &::placeholder
+			  color: #000
+				
+	.uslugi
+		background-color: #f5f5f5
+		width: 100%
+		padding: 0
+		&>h3.h3
+			background-color: #fff
+			padding: 6px 0 
+			margin: 0
+			padding-left: 50px
+	 &-carousel
+			display: flex
+			flex-direction: column
+			margin: auto
+			background-color: #fff
+			width: 100%
+			&-item
+				text-align: center
+			 background: linear-gradient(to right, #213970, #470011)
+				padding: 0
+				padding-bottom: 20px
+				height: 9rem
+				color: #f5f5f5
+				display: block
+				.h3
+					padding: 1% 0
+					margin: 0
+					
+.table-price
+	background-color: #fff
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	.h3
+		padding-left: 50px
+		padding-bottom: 30px
+		align-self: flex-start
+	&-table
+		display: flex
+		flex-direction: column
+		table-layout: fixed
+		border-collapse: collapse
+		border-spacing: 0
+		padding: 10px
+		width: 95%
+		.important-price
+			background-color: rgba(#008000, .6)
+			td
+			 font-weight: 800
+			 padding: 5px 5px
+		thead
+		 background: linear-gradient(to right, #213970, #470011)
+		 th
+		 	font-size: 1.1em
+		 	color: #fff
+				width: 50%
+				padding: 5px 10px
+			th:first-child
+			 text-align: left
+			 width: 90%
+			th:last-child
+			 text-align: right
+		td:first-child, td:last-child
+		 text-align: left
+		td:last-child
+		 text-align: right
+		td:first-child
+		 width: 90%
+		td
+			padding: 10px 10px
+			text-align: center
+			width: 50%
+		 font-size: 1em
+		tr
+			display: flex
+			border-bottom: 1px solid rgba(#000, .3)
+			transition: background-color .2s ease
+			width: 100%
+			align-items: center
+		tbody
+			display: flex
+			flex-direction: column
+			align-items: center
+		 tr:hover, tr:focus, tr:active
+		  background-color: #000
+		  color: #fff
+					
+.main-text
+	margin-top: 20px
+	p
+		padding: 10px 0
+		strong
+			font-size: 1.1em
+	ul
+		li
+   font-size: 1.1em
+   font-weight: 300
+   margin: 0
+   letter-spacing: 1.5px
+   font-family: $default-font
+				
+.footer
+	background: linear-gradient(to bottom, #2c363e, #181d21)
+ font-family: $default-font
+	font-weight: 300
+	color: #fff
+	padding: 50px 10px
+	&-info
+		padding: 0
+		width: 100%
+		margin: 0
+		&-info, &-about, &-social, &-contacts
+			width: 100%
+	.h3
+		font-size: 1.4em
+		padding: 0
+		margin: 0
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 10px 0
+		color: #c2c6c7
+		font-size: 1em
+	a
+		text-decoration: none
+		color: #c2c6c7
+		&:hover, &:focus
+		 text-decoration: underline
+	.footer-info-social
+		text-align: center
+	 i
+	 	font-size: 2em
+	 	line-height: 2em
+			padding: 0 10px
+			margin: 0 10px
+	.footer-info-contacts
+	 i
+	 	font-size: 1.5em
+	 	line-height: 2em
+			padding: 0 10px
+			margin: 0 10px
+			vertical-align: middle
+		a
+		 font-size: 1em
+
+@mixin opacity($opacity)
+	opacity: $opacity / 100
+	filter: alpha(opacity=$opacity)
+	
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 100
+	background-color: #fff
+			
+		
+@import 'media'

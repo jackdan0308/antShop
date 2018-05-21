@@ -1,0 +1,401 @@
+@import 'vars'
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+ .top-line
+		.address
+			font-size: 1.3em
+				
+	.nav-line
+		ul
+			li
+				padding: 0 4px
+
+	.header-block-h1
+	 .h1
+	 	font-size: 2.1em
+	
+	.footer
+	 justify-content: space-between
+		padding: 20px 30px
+		&-info
+			height: 100%
+			ul
+				font-size: .9em
+			&-info, &-about, &-social, &-contacts
+			 width: 100%
+			 padding: 0 10px
+			&-contacts
+				ul
+					li:last-child
+			   padding-left: 0 !important
+		.h3
+			font-size: 1.1em
+		
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+ .top-line
+		.slogan
+			font-size: .4em
+		.logo
+			font-size: 1.2em
+			padding: 8px
+			padding-right: 2px
+		.address
+			font-size: .9em
+		.phone
+			font-size: 1.2em
+			padding: 8px
+			padding-right: 20px
+				
+	.nav-line
+		ul
+			font-size: .93em
+			padding: 0
+			li
+				padding: 0px
+				ul
+					left: 0
+
+	.header-block-h1
+		width: 80%
+		padding-top: 3%
+	 .h1
+	 	font-size: 1.7em
+		p
+			font-size: 1em
+	
+	.fotorama
+		width: 300px
+ .contacts
+		.fotorama
+		 width: 100%
+	
+	.h2
+		font-size: 1.7em
+	.h3
+		font-size: 1.5em
+		
+	.consultation
+		&-words
+			h3
+				font-size: 1.3em
+			h3+p
+				font-size: 1.8em !important
+			p
+				font-size: 1.3em !important
+	 &-form
+			padding-top: 20px
+			padding-bottom: 40px
+			.callback-input
+				width: 30%
+				
+	.footer
+		&-info
+		 flex-direction: column
+			height: 100%
+			&-social
+				text-align: left !important
+			&-contacts
+				ul
+					li:last-child
+			   padding-left: 0 !important
+		.h3
+			font-size: 1.2em
+		
+				
+/*For fu**ing iPad mini*/
+@media only screen and (max-width : 770px)
+ .top-line
+		.slogan
+			font-size: .4em
+		.logo
+			font-size: 1.2em
+			padding: 8px
+			padding-right: 2px
+		.address
+			font-size: .9em
+		.phone
+			font-size: 1.2em
+			padding: 8px
+			padding-right: 20px
+				
+	.nav-line
+		ul
+			font-size: .93em
+			padding: 0
+			li
+				padding: 0px
+				ul
+					left: 0
+
+	.header-block-h1
+		width: 80%
+		padding-top: 3%
+	 .h1
+	 	font-size: 1.7em
+		p
+			font-size: 1em
+	
+	.fotorama
+		width: 300px
+ .contacts
+		.fotorama
+		 width: 100%
+			
+	.block-address-tc-photo
+		flex-direction: column
+	.fotorama-contacts
+		width: 100% !important
+	.yandexMap
+		width: 100% !important
+	.h2
+		font-size: 1.7em
+	.h3
+		font-size: 1.5em
+		
+	.consultation
+		&-words
+			h3
+				font-size: 1.3em
+			h3+p
+				font-size: 1.8em !important
+			p
+				font-size: 1.3em !important
+	 &-form
+			padding-top: 20px
+			padding-bottom: 40px
+			.callback-input
+				width: 30%
+				
+	.footer
+		&-info
+		 flex-direction: column
+			height: 100%
+			&-social
+				text-align: left !important
+			&-contacts
+				ul
+					li:last-child
+			   padding-left: 0 !important
+		.h3
+			font-size: 1.2em
+		
+/* Small Devices, Tablets */
+@media only screen and (max-width : 700px)
+ p
+		font-size: 1em
+	
+	.top-line
+		.slogan
+			font-size: .4em
+		.logo
+			font-size: 1em
+			padding: 8px
+			padding-right: 1px
+		.address
+			font-size: .8em
+		.phone
+			font-size: 1em
+			padding: 8px
+			padding-right: 10px
+				
+	.nav-line
+		ul
+			font-size: .93em
+			padding: 0
+			li
+				display: none
+				padding: 0px
+				ul
+					left: 0
+				
+	.header-block
+		height: 350px
+
+	.header-block-h1
+		width: 80%
+		padding-top: 3%
+	 .h1
+	 	font-size: 1.7em
+		p
+			font-size: 1em
+	
+	.fotorama
+		width: 300px
+	.contacts
+		.fotorama
+		 width: 100%
+	
+	.h2
+		font-size: 1.5em
+	.h3
+		font-size: 1.4em
+		
+	.consultation
+		&-words
+			h3
+				font-size: 1.2em
+			h3+p
+				font-size: 1.5em !important
+			p
+				font-size: 1.2em !important
+	 &-form
+			padding-top: 20px
+			padding-bottom: 40px
+			.callback-input
+				width: 30%
+				
+	.footer
+		&-info
+		 flex-direction: column
+			height: 100%
+			&-social
+				text-align: left !important
+			&-contacts
+				ul
+					li:last-child
+			   padding-left: 0 !important
+		.h3
+			font-size: 1.2em
+		
+	
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+ p
+		font-size: 1em
+	
+	.top-line
+		flex-direction: column
+		text-align: center
+		.slogan
+			font-size: .58em !important
+		.logo
+			font-size: 1.2em
+			padding: 6px 0
+		.address
+			font-size: 1em
+		.phone
+			font-size: 1.2em
+			padding-bottom: 10px
+			padding-top: 0
+				
+	.nav-line
+		ul
+			font-size: .93em
+			padding: 0
+			li
+				display: none
+				padding: 0px
+				ul
+					left: 0
+				
+	.header-block
+		height: 350px
+
+	.header-block-h1
+		width: 100%
+		padding-top: 1%
+	 .h1
+	 	font-size: 1.3em
+		p
+			font-size: .8em
+	
+	.header-block-buttons
+	 padding: 20px 0
+ .callback-input
+	 font-size: 1em
+
+ .callback-button
+ 	font-size: 1em
+	
+	.block-address
+		flex-direction: column
+		height: 1100px !important
+		padding: 0 !important
+		align-items: center
+		p
+			font-size: 1em
+		span
+			font-size: 1.3em !important
+		
+	.fotorama
+		width: 300px
+ .contacts
+		.fotorama
+		 width: 100%
+	
+	.h2
+		font-size: 1.5em
+	.h3
+		font-size: 1.4em
+		
+	.consultation
+		&-words
+			h3
+				font-size: 1.2em
+			h3+p
+				font-size: 1.5em !important
+			p
+				font-size: 1.2em !important
+	 &-form
+			padding-top: 20px
+			padding-bottom: 40px
+			.callback-input
+				width: 30%
+
+	.service-words, .uslugi, .main-text
+		padding: 20px 5px !important
+		padding-top: 20px			
+				
+	.footer
+		&-info
+		 flex-direction: column
+			height: 100%
+			&-social
+				text-align: left !important
+			&-contacts
+				ul
+					li:last-child
+			   padding-left: 0 !important
+		.h3
+			font-size: 1.2em
+		
+	
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 370px)
+ /**/
+			
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
